@@ -1,0 +1,17 @@
+[gd_resource type="CardData" load_steps=2 format=3]
+
+[sub_resource type="CardEffect" id="CardEffect_1"]
+effect_type = 2
+value = 3.0
+is_percentage = false
+target = 0
+
+[resource]
+id = "common_draw"
+card_name = "抽卡"
+cost = 1
+card_type = 1
+rarity = 1
+description = "从抽牌堆抽3张牌"
+effects = Array[CardEffect]([SubResource("CardEffect_1")])
+exhaust = false

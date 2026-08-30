@@ -1,0 +1,17 @@
+[gd_resource type="CardData" load_steps=2 format=3]
+
+[sub_resource type="CardEffect" id="CardEffect_1"]
+effect_type = 1
+value = 10.0
+is_percentage = false
+target = 0
+
+[resource]
+id = "defend"
+card_name = "防御"
+cost = 1
+card_type = 1
+rarity = 0
+description = "本轮防御力提高10点"
+effects = Array[CardEffect]([SubResource("CardEffect_1")])
+exhaust = false

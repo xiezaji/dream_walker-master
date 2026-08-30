@@ -1,0 +1,17 @@
+[gd_resource type="CardData" load_steps=2 format=3]
+
+[sub_resource type="CardEffect" id="CardEffect_1"]
+effect_type = 8
+value = 2.25
+is_percentage = true
+target = 1
+
+[resource]
+id = "rare_borrow_damage"
+card_name = "预借伤害"
+cost = 2
+card_type = 0
+rarity = 2
+description = "对一名敌人发动攻击力225%的攻击，该敌人下回合回复伤害一半的生命"
+effects = Array[CardEffect]([SubResource("CardEffect_1")])
+exhaust = false

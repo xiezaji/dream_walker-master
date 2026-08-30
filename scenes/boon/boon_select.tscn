@@ -1,0 +1,98 @@
+[gd_scene load_steps=2 format=3 uid="uid://dybglyb7yv5r6"]
+
+[ext_resource type="Script" path="res://scripts/ui/boon_select_ui.gd" id="1_3p8qh"]
+
+[node name="BoonSelect" type="Control"]
+script = ExtResource("1_3p8qh")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Title" type="Label" parent="."]
+offset_left = 0.0
+offset_top = 20.0
+offset_right = 1024.0
+offset_bottom = 60.0
+horizontal_alignment = 1
+text = "选择赐福"
+
+[node name="OptionsContainer" type="HBoxContainer" parent="."]
+offset_left = 100.0
+offset_top = 100.0
+offset_right = 924.0
+offset_bottom = 500.0
+
+[node name="BoonCard0" type="Panel" parent="OptionsContainer"]
+custom_minimum_size = Vector2(240, 300)
+
+[node name="BoonName" type="Label" parent="OptionsContainer/BoonCard0"]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 230.0
+offset_bottom = 40.0
+text = "赐福名"
+
+[node name="BoonDesc" type="Label" parent="OptionsContainer/BoonCard0"]
+offset_left = 10.0
+offset_top = 50.0
+offset_right = 230.0
+offset_bottom = 150.0
+text = "描述"
+autowrap_mode = 3
+
+[node name="SelectButton" type="Button" parent="OptionsContainer/BoonCard0"]
+offset_left = 60.0
+offset_top = 240.0
+offset_right = 180.0
+offset_bottom = 270.0
+text = "选择"
+
+[node name="BoonCard1" type="Panel" parent="OptionsContainer"]
+custom_minimum_size = Vector2(240, 300)
+
+[node name="BoonName" type="Label" parent="OptionsContainer/BoonCard1"]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 230.0
+offset_bottom = 40.0
+text = "赐福名"
+
+[node name="BoonDesc" type="Label" parent="OptionsContainer/BoonCard1"]
+offset_left = 10.0
+offset_top = 50.0
+offset_right = 230.0
+offset_bottom = 150.0
+text = "描述"
+autowrap_mode = 3
+
+[node name="SelectButton" type="Button" parent="OptionsContainer/BoonCard1"]
+offset_left = 60.0
+offset_top = 240.0
+offset_right = 180.0
+offset_bottom = 270.0
+text = "选择"
+
+[node name="BoonCard2" type="Panel" parent="OptionsContainer"]
+custom_minimum_size = Vector2(240, 300)
+
+[node name="BoonName" type="Label" parent="OptionsContainer/BoonCard2"]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 230.0
+offset_bottom = 40.0
+text = "赐福名"
+
+[node name="BoonDesc" type="Label" parent="OptionsContainer/BoonCard2"]
+offset_left = 10.0
+offset_top = 50.0
+offset_right = 230.0
+offset_bottom = 150.0
+text = "描述"
+autowrap_mode = 3
+
+[node name="SelectButton" type="Button" parent="OptionsContainer/BoonCard2"]
+offset_left = 60.0
+offset_top = 240.0
+offset_right = 180.0
+offset_bottom = 270.0
+text = "选择"

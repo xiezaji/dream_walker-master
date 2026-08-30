@@ -1,0 +1,107 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfk7mj5qxc2lp"]
+
+[ext_resource type="Script" path="res://scripts/ui/shop_ui.gd" id="1_fh8qm"]
+
+[node name="Shop" type="Control"]
+script = ExtResource("1_fh8qm")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="MainVBox" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 10.0
+offset_right = -20.0
+offset_bottom = -10.0
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="MainVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "商店"
+horizontal_alignment = 1
+
+[node name="GoldLabel" type="Label" parent="MainVBox"]
+layout_mode = 2
+text = "金币: 100"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MainVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ContentVBox" type="VBoxContainer" parent="MainVBox/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 16
+
+[node name="CommonSection" type="VBoxContainer" parent="MainVBox/ScrollContainer/ContentVBox"]
+layout_mode = 2
+
+[node name="SectionTitle" type="Label" parent="MainVBox/ScrollContainer/ContentVBox/CommonSection"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "普通卡牌（40~60金）"
+
+[node name="ItemsRow" type="HBoxContainer" parent="MainVBox/ScrollContainer/ContentVBox/CommonSection"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="RareSection" type="VBoxContainer" parent="MainVBox/ScrollContainer/ContentVBox"]
+layout_mode = 2
+
+[node name="SectionTitle" type="Label" parent="MainVBox/ScrollContainer/ContentVBox/RareSection"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "稀有卡牌（60~80金）"
+
+[node name="ItemsRow" type="HBoxContainer" parent="MainVBox/ScrollContainer/ContentVBox/RareSection"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="RelicSection" type="VBoxContainer" parent="MainVBox/ScrollContainer/ContentVBox"]
+layout_mode = 2
+
+[node name="SectionTitle" type="Label" parent="MainVBox/ScrollContainer/ContentVBox/RelicSection"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "遗物（普通100~150金 / 史诗200~210金）"
+
+[node name="ItemsRow" type="HBoxContainer" parent="MainVBox/ScrollContainer/ContentVBox/RelicSection"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="EndingSection" type="VBoxContainer" parent="MainVBox/ScrollContainer/ContentVBox"]
+layout_mode = 2
+
+[node name="SectionTitle" type="Label" parent="MainVBox/ScrollContainer/ContentVBox/EndingSection"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "结局卡（20金）"
+
+[node name="ItemsRow" type="HBoxContainer" parent="MainVBox/ScrollContainer/ContentVBox/EndingSection"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="DeleteSection" type="VBoxContainer" parent="MainVBox/ScrollContainer/ContentVBox"]
+layout_mode = 2
+
+[node name="SectionTitle" type="Label" parent="MainVBox/ScrollContainer/ContentVBox/DeleteSection"]
+layout_mode = 2
+text = "删除卡牌（50金，每层限1次）"
+
+[node name="DeleteButton" type="Button" parent="MainVBox/ScrollContainer/ContentVBox/DeleteSection"]
+layout_mode = 2
+text = "选择并删除"
+
+[node name="BottomBar" type="HBoxContainer" parent="MainVBox"]
+layout_mode = 2
+
+[node name="LeaveButton" type="Button" parent="MainVBox/BottomBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+text = "离开商店"

@@ -1,0 +1,17 @@
+[gd_resource type="CardData" load_steps=2 format=3]
+
+[sub_resource type="CardEffect" id="CardEffect_1"]
+effect_type = 0
+value = 1.0
+is_percentage = true
+target = 1
+
+[resource]
+id = "strike"
+card_name = "打击"
+cost = 1
+card_type = 0
+rarity = 0
+description = "对一名敌人发动攻击力100%的攻击"
+effects = Array[CardEffect]([SubResource("CardEffect_1")])
+exhaust = false

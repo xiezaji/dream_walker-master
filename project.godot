@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="DreamWalker"
+run/main_scene="res://scenes/main_menu.tscn"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+
+[autoload]
+
+GameState="*res://scripts/game_state.gd"
+CardDatabase="*res://scripts/cards/card_database.gd"
+EnemyDatabase="*res://scripts/enemies/enemy_database.gd"
+RelicDatabase="*res://scripts/relics/relic_database.gd"
+RelicManager="*res://scripts/relics/relic_manager.gd"
+BattleManager="*res://scripts/battle/battle_manager.gd"
+RunManager="*res://scripts/run_manager.gd"
+DeckViewer="*res://scripts/ui/deck_viewer.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

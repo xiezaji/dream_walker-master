@@ -1,0 +1,23 @@
+[gd_resource type="CardData" load_steps=3 format=3]
+
+[sub_resource type="CardEffect" id="CardEffect_1"]
+effect_type = 0
+value = 0.8
+is_percentage = true
+target = 1
+
+[sub_resource type="CardEffect" id="CardEffect_2"]
+effect_type = 2
+value = 1.0
+is_percentage = false
+target = 0
+
+[resource]
+id = "rare_prophet"
+card_name = "先知"
+cost = 1
+card_type = 0
+rarity = 2
+description = "对一名敌人发动攻击力80%的攻击，并抽一张牌"
+effects = Array[CardEffect]([SubResource("CardEffect_1"), SubResource("CardEffect_2")])
+exhaust = false

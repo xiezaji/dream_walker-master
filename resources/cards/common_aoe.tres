@@ -1,0 +1,17 @@
+[gd_resource type="CardData" load_steps=2 format=3]
+
+[sub_resource type="CardEffect" id="CardEffect_1"]
+effect_type = 0
+value = 0.6
+is_percentage = true
+target = 2
+
+[resource]
+id = "common_aoe"
+card_name = "群攻"
+cost = 1
+card_type = 0
+rarity = 1
+description = "对所有敌人发动攻击力60%的伤害"
+effects = Array[CardEffect]([SubResource("CardEffect_1")])
+exhaust = false

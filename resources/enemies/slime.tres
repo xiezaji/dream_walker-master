@@ -1,0 +1,21 @@
+[gd_resource type="EnemyData" load_steps=3 format=3]
+
+[sub_resource type="EnemyIntent" id="EnemyIntent_1"]
+intent_type = 0
+value = 40
+status_id = ""
+
+[sub_resource type="EnemyIntent" id="EnemyIntent_2"]
+intent_type = 1
+value = 10
+status_id = "reduce_defense"
+
+[resource]
+id = "slime"
+enemy_name = "史莱姆"
+max_hp = 120
+attack = 40
+defense = 40
+intent_pattern = Array[EnemyIntent]([SubResource("EnemyIntent_1"), SubResource("EnemyIntent_2")])
+experience_reward = 8
+gold_reward = 10

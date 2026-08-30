@@ -1,0 +1,17 @@
+[gd_resource type="CardData" load_steps=2 format=3]
+
+[sub_resource type="CardEffect" id="CardEffect_1"]
+effect_type = 7
+value = 2.0
+is_percentage = false
+target = 0
+
+[resource]
+id = "rare_borrow_draw"
+card_name = "预借抽卡"
+cost = 0
+card_type = 1
+rarity = 2
+description = "抽两张牌，下一回合少抽两张牌"
+effects = Array[CardEffect]([SubResource("CardEffect_1")])
+exhaust = false

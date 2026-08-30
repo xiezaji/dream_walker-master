@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqpqfmv82jqn8"]
+
+[ext_resource type="Script" path="res://scripts/ui/card_view.gd" id="1_r48km"]
+
+[node name="CardView" type="Control"]
+script = ExtResource("1_r48km")
+custom_minimum_size = Vector2(120, 180)
+
+[node name="CardBG" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HighlightBorder" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 0, 0.3)
+visible = false
+
+[node name="CostLabel" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 30.0
+offset_bottom = 24.0
+text = "1"
+
+[node name="NameLabel" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 28.0
+offset_right = 116.0
+offset_bottom = 48.0
+text = "名称"
+
+[node name="TypeLabel" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 50.0
+offset_right = 116.0
+offset_bottom = 70.0
+text = "攻击"
+
+[node name="DescLabel" type="RichTextLabel" parent="."]
+offset_left = 4.0
+offset_top = 74.0
+offset_right = 116.0
+offset_bottom = 150.0
+bbcode_enabled = true
+text = ""

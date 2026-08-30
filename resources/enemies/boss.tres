@@ -1,0 +1,31 @@
+[gd_resource type="EnemyData" load_steps=5 format=3]
+
+[sub_resource type="EnemyIntent" id="EnemyIntent_1"]
+intent_type = 0
+value = 70
+status_id = ""
+
+[sub_resource type="EnemyIntent" id="EnemyIntent_2"]
+intent_type = 0
+value = 50
+status_id = ""
+
+[sub_resource type="EnemyIntent" id="EnemyIntent_3"]
+intent_type = 1
+value = 20
+status_id = "reduce_defense"
+
+[sub_resource type="EnemyIntent" id="EnemyIntent_4"]
+intent_type = 0
+value = 90
+status_id = ""
+
+[resource]
+id = "boss"
+enemy_name = "梦魇"
+max_hp = 350
+attack = 70
+defense = 50
+intent_pattern = Array[EnemyIntent]([SubResource("EnemyIntent_1"), SubResource("EnemyIntent_2"), SubResource("EnemyIntent_3"), SubResource("EnemyIntent_4")])
+experience_reward = 16
+gold_reward = 50

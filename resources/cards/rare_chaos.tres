@@ -1,0 +1,18 @@
+[gd_resource type="CardData" load_steps=2 format=3]
+
+[sub_resource type="CardEffect" id="CardEffect_1"]
+effect_type = 0
+value = 1.2
+is_percentage = true
+target = 3
+modifier = {"count": 1}
+
+[resource]
+id = "rare_chaos"
+card_name = "乱战"
+cost = -1
+card_type = 0
+rarity = 2
+description = "消耗全部费用，对随机敌人发动攻击力120%的攻击X次（溢出时攻击自己）"
+effects = Array[CardEffect]([SubResource("CardEffect_1")])
+exhaust = false

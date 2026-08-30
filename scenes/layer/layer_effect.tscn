@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://d123abc4567def8ghijk9l0m"]
+
+[ext_resource type="Script" path="res://scripts/ui/layer_effect_ui.gd" id="1_a2b3c4d5e6"]
+
+[node name="LayerEffect" type="Control"]
+script = ExtResource("1_a2b3c4d5e6")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Title" type="Label" parent="."]
+offset_left = 0.0
+offset_top = 20.0
+offset_right = 1024.0
+offset_bottom = 60.0
+horizontal_alignment = 1
+text = "选择本层效果"
+
+[node name="OptionsContainer" type="VBoxContainer" parent="."]
+offset_left = 200.0
+offset_top = 100.0
+offset_right = 824.0
+offset_bottom = 500.0
+
+[node name="Option0" type="Button" parent="OptionsContainer"]
+custom_minimum_size = Vector2(0, 80)
+text = "选项0"
+
+[node name="Option1" type="Button" parent="OptionsContainer"]
+custom_minimum_size = Vector2(0, 80)
+text = "选项1"
+
+[node name="Option2" type="Button" parent="OptionsContainer"]
+custom_minimum_size = Vector2(0, 80)
+text = "选项2"

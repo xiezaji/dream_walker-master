@@ -1,0 +1,26 @@
+[gd_resource type="EnemyData" load_steps=4 format=3]
+
+[sub_resource type="EnemyIntent" id="EnemyIntent_1"]
+intent_type = 0
+value = 55
+status_id = ""
+
+[sub_resource type="EnemyIntent" id="EnemyIntent_2"]
+intent_type = 0
+value = 55
+status_id = ""
+
+[sub_resource type="EnemyIntent" id="EnemyIntent_3"]
+intent_type = 1
+value = 15
+status_id = "reduce_defense"
+
+[resource]
+id = "elite"
+enemy_name = "岩石傀儡"
+max_hp = 200
+attack = 55
+defense = 60
+intent_pattern = Array[EnemyIntent]([SubResource("EnemyIntent_1"), SubResource("EnemyIntent_2"), SubResource("EnemyIntent_3")])
+experience_reward = 12
+gold_reward = 35

@@ -1,0 +1,17 @@
+[gd_resource type="CardData" load_steps=2 format=3]
+
+[sub_resource type="CardEffect" id="CardEffect_1"]
+effect_type = 6
+value = 1.0
+is_percentage = false
+target = 0
+
+[resource]
+id = "rare_borrow_energy"
+card_name = "预借时间"
+cost = 0
+card_type = 1
+rarity = 2
+description = "获得1费，下一回合减1费"
+effects = Array[CardEffect]([SubResource("CardEffect_1")])
+exhaust = false
